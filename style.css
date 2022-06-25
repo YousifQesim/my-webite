@@ -84,13 +84,14 @@ nav li:hover .nav-link {
 }
 
 .just {
-    width: 70%;
+    width: 88vw;
     height: 400px;
     text-align: center;
     display: block;
     margin: 0 auto;
     position: relative;
     top: 90px;
+    left: 30px;
 }
 
 @keyframes filling {
@@ -120,9 +121,11 @@ nav {
     
 }
 .introduce {
-    width: 100%;
+    width: 90vw;
     animation: filling 5s normal forwards;
-    
+    position: relative;
+    left: 72px;
+   
 }
 
 .introduce img {
