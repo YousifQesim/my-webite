@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+}
+
+nav li {
+    border: 2px solid #2E2F31;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: inline-flex;
+    margin: 10px 0px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+nav li i {
+    font-size: 25px;
+    position: relative;
+    bottom: 6px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    height: 50px;
+
+}
+
+nav li a {
+    opacity: 0;
+    transition: all 1.5s;
+    cursor: pointer;
+    position: relative;
+    right: 13px;
+    bottom: 3px;
+}
+
+nav li:hover {
+    width: 110px;
+    transition: all 0.7s;
+    background-color: #2e2f31f9;
+    color: white;
+
+
+}
+
+nav li:hover .nav-link {
+    opacity: 1;
+    transition: all 1s;
+    color: white;
+}
+
+.text h1 {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #45505b;
+
+}
+
+.text p span {
+    font-family: 'Playfair Display', serif;
+}
+
+.text p {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.just {
+    width: 70%;
+    height: 400px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 90px;
+}
+
+@keyframes filling {
+    0% {
+        position: absolute;
+        top: -100px;
+    }
+
+    100% {
+        position: absolute;
+        top: 0px;
+    }
+}
+@keyframes nave {
+    0% {
+        position: absolute;
+        left: -90px;
+    }
+
+    100% {
+        position: absolute;
+        left: 5px;
+    }
+}
+nav {
+    animation: nave 2s normal forwards;
+    
+}
+.introduce {
+    width: 100%;
+    animation: filling 5s normal forwards;
+    
+}
+
+.introduce img {
+    height: 350px;
+    width: 350px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttons a {
+    display: block;
+    min-width: 135px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .5s;
+    margin: 8px;
+    border-radius: 10px;
+
+}
+
+.buttons a span {
+    position: relative;
+    z-index: 2;
+}
+
+.buttons a:after {
+    position: absolute;
+    content: "";
+    top: -0.7px;
+    left: -1px;
+    width: 0;
+    height: 38px;
+    background: #2E2F31;
+    transition: all 1s;
+    border-radius: 10px;
+}
+
+.buttons a:hover {
+    color: #fff;
+    border-radius: 10px;
+}
+
+.buttons a:hover:after {
+    width: 102%;
+
+    border-radius: 10px;
+}
