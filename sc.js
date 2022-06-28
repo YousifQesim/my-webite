@@ -1,6 +1,6 @@
 var typed = new Typed('.auto', {
-    strings: ["I 'm Front end web developer"],
-    typeSpeed:100,
-    backSpeed:70,
+    strings: ["Front end web developer","UI/UX designer","Junior database administrator","Social media manager"],
+    typeSpeed:90,
+    backSpeed:50,
     loop:true
   });

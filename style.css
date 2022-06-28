@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -111,13 +112,15 @@ nav li:hover i {
 
 }
 
-.text p span {
+.auto{
     font-family: 'Playfair Display', serif;
     font-weight: bold;
 }
 
-.text p {
-    font-family: 'Roboto', sans-serif;
+.aboutMe span {
+    color: #45505b;
+ font-weight: bold;
+ font-family: 'Roboto Condensed', sans-serif;
 
 }
 
@@ -228,4 +231,227 @@ nav {
     width: 102%;
 
     border-radius: 10px;
+}
+.progress{
+    background-color: #45505b5e;
+    justify-content: flex-start;
+    border-radius: 100px;
+    border: 1px solid #333;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height:20px;
+    width: 300px;
+}
+.value{
+   
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 70px;
+    background-color: #45505b;
+   height:30px;
+    width:0;
+
+}
+@keyframes office {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:100%;
+    }
+    
+}
+
+@keyframes adobe {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:70%;
+    }
+    
+}
+
+@keyframes Figma {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:80%;
+    }
+    
+}
+
+
+@keyframes Accounting {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:90%;
+    }
+    
+}
+
+
+
+@keyframes social {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:100%;
+    }
+    
+}
+
+
+@keyframes adobe {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:70%;
+    }
+    
+}
+
+
+
+@keyframes database {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:85%;
+    }
+    
+}
+
+
+@keyframes Java {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:88%;
+    }
+    
+}
+
+@keyframes HTML {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:100%;
+    }
+    
+}
+
+@keyframes CSS {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:83%;
+    }
+    
+}
+
+
+@keyframes js {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:65%;
+    }
+    
+}
+
+@keyframes React {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:50%;
+    }
+    
+}
+@keyframes Git {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:60%;
+    }
+    
+}
+
+@keyframes kurdish {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:100%;
+    }
+    
+}
+@keyframes arbic {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:85%;
+    }
+    
+}
+@keyframes english {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:70%;
+    }
+    
+}
+.skills{
+    width: 70%;
+height: 40%;
+    display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 30px;
+margin: 0 auto;
+}
+
+#technical{
+    width: 75%;
+    border: 2px solid #1c4369b6;
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+   font-family: "Raleway", sans-serif;
+   border-inline-width: 30px;
+   width: 30%;
+   border-radius:10px;
+   margin-bottom: 40px;
+
+   
+}
+.iteams_secound_page{
+ position: relative;
+ top: 50px;
+}
+.languages{
+    width: 70%;
+    height: 40%;
+        display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+position: relative;
+top: 40px;
 }
