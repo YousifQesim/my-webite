@@ -15,42 +15,57 @@
 
 </head>
 <body>
-<div class="first-page">
+<section class="first-page" id="first-page" style="height:100vh">
+  <div class="navbar">
+
     <nav>
       <ul class="nav flex-column">
-      <li class="nav-item">
-      <i class="bi bi-house"></i> <a class="nav-link active" aria-current="page" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <i class="bi bi-person"></i>  <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <i class="bi bi-laptop"></i> <a class="nav-link" href="#">Skills</a>
-      </li>
-      <li class="nav-item">
-        <i class="bi bi-envelope-check"></i> <a class="nav-link disabled">contact</a>
-      </li>
-    </ul></nav>
+        <a href="#first-page"  class="focus">
+          <li class="nav-item" id="li">
+            <i class="bi bi-house"></i> <a class="nav-link active" aria-current="page" href=""><span class="text">Home</span> </a>
+          </li>
+        </a>
+        <a href="#secound-page">
+          <li class="nav-item">
+            <i class="bi bi-person"></i> <a class="nav-link active" aria-current="page" href="#secound-page"><span class="text"> About</span></a>
+          </li>
+        </a>
+        <a href="">
+          <li class="nav-item">
+            <i class="bi bi-laptop"></i> <a class="nav-link active" aria-current="page" href="#first-page"><span class="text">Skills </span></a>
+          </li>
+        </a>
+        <a href="">
+          <li class="nav-item">
+            <i class="bi bi-envelope-check"></i> <a class="nav-link active" aria-current="page" href="#first-page"><span class="text">Contact</span></a>
+          </li>
+        </a>
+    </ul>
+  </nav>
+  </div>
     
-    <section class="introduce">
+    <section class="introduce container">
   <div class="just">
     <img src="images/my.jpg" alt="my-image">
     <div class="text">
       <h1><span class="title2"> Yusif Qasim</span> </h1>
       <p>Welcome to my Webpage <span id="span" class="auto" style="font-weight: bold;"></span> </p>
     </div>
-    <div class="buttons">
+    <div class="buttons container">
       <div class="wrapper">
-        <a href="#"><span>About me</span></a>
+        <a href="#secound-page"><span>About me</span></a>
       </div>
       <div class="wrapper">
-        <a href="#"><span>Resume</span></a>
+        <a href="Cv.pdf" target="_blank"><span>Resume</span></a>
       </div>
     </div>
   </div>
   
     </section>
      
-</div>
+  </section>
+<section style="height:100vh ;width:100%;" class="container" id="secound-page">
+  <h1>About me</h1>
+</section>
 </body>
 </html>

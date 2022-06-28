@@ -7,8 +7,9 @@
     padding: 0;
 }
 
-nav {
-    position: relative;
+.navbar {
+    position: sticky;
+    top: 50px;
 }
 
 nav ul {
@@ -28,8 +29,11 @@ nav li {
     transition: all 1s;
     cursor: pointer;
 }
+.focus:focus ul{
+background-color: red;}
 
 nav li i {
+    color: black;
     font-size: 25px;
     position: relative;
     bottom: 6px;
@@ -40,13 +44,34 @@ nav li i {
 
 }
 
+.nav-link {
+    color: black;
+}
+
 nav li a {
-    opacity: 0;
     transition: all 1.5s;
     cursor: pointer;
     position: relative;
-    right: 13px;
-    bottom: 3px;
+    
+    color: black;
+}
+
+nav li a i {
+    position: relative;
+    top: 0px;
+
+}
+
+nav li a span {
+ color: white;
+opacity: 0;
+    position: relative;
+    right: 8px;
+
+}
+
+.nav-link i {
+    color: black;
 }
 
 nav li:hover {
@@ -58,9 +83,21 @@ nav li:hover {
 
 }
 
-nav li:hover .nav-link {
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li:hover .text {
     opacity: 1;
-    transition: all 1s;
+    transition: all 0.8s;
+    color: white;
+}
+
+nav li:hover i {
+    opacity: 1;
+    transition: all 0.5s;
     color: white;
 }
 
@@ -106,6 +143,7 @@ nav li:hover .nav-link {
         top: 0px;
     }
 }
+
 @keyframes nave {
     0% {
         position: absolute;
@@ -117,16 +155,18 @@ nav li:hover .nav-link {
         left: 5px;
     }
 }
+
 nav {
     animation: nave 2s normal forwards;
-    
+
 }
+
 .introduce {
     width: 90vw;
     animation: filling 5s normal forwards;
     position: relative;
     left: 72px;
-   
+
 }
 
 .introduce img {
@@ -170,8 +210,8 @@ nav {
 .buttons a:after {
     position: absolute;
     content: "";
-    top: -0.7px;
-    left: -1px;
+    top: -0.9px;
+    left: -1.1px;
     width: 0;
     height: 38px;
     background: #2E2F31;
