@@ -76,6 +76,7 @@ nav li:hover .nav-link {
 
 .text p span {
     font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
 
 .text p {
@@ -132,6 +133,8 @@ nav {
     height: 350px;
     width: 350px;
     text-align: center;
+    position: relative;
+    bottom: 10px;
 }
 
 .buttons {
