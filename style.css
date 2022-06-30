@@ -2,6 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+::-webkit-scrollbar{
+width: 18px;
+
+}
+::-webkit-scrollbar-track{
+background-color: #2e2f3148;
+}
+::-webkit-scrollbar-thumb{
+    background:#2E2F31;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -430,14 +444,14 @@ nav {
 }
 
 #technical{
-    width: 75%;
+    max-width: 50%;
     border: 2px solid #1c4369b6;
    display: block;
    margin: 0 auto;
    text-align: center;
    font-family: "Raleway", sans-serif;
    border-inline-width: 30px;
-   width: 30%;
+  
    border-radius:10px;
    margin-bottom: 40px;
 
@@ -498,7 +512,7 @@ top: 40px;
        align-items:center;
         position: relative;
         top: 150px;
-        height:75vh;
+        min-height:85vh;
         width: 85%;
         margin: 0 auto;
 
@@ -577,18 +591,18 @@ top: 40px;
         top: 100px;
         list-style: none;
         text-decoration: none;
-        color:#2E4C6D ;
+        color:#45505b ;
         font-weight: bold;
-        border: 2px solid #2E4C6D;
+        border: 2px solid #45505b;
         padding: 6px;
         border-radius: 10px;
         transition: all 1s;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .box a:hover{
-        background-color: #2E4C6D;
+        background-color: #45505b;
         color: white;
-        box-shadow: 0px 3px 8px #2E4C6D;
+        box-shadow: 0px 3px 8px #45505b;
     }    
     .line{
         border-bottom:7px dotted #2E2F31;
