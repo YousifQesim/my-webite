@@ -94,7 +94,7 @@ display: block !important;}
 .navbar {
     position: fixed;
     top: 50px;
-    z-index: 100;
+    z-index: 1000;
 }
 
 nav ul {
