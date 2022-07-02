@@ -18,7 +18,7 @@ function press() {
   }
   else{
     for_res.classList.add("active");
-    for_res.style.width="50gtvw";
+    for_res.style.width="50vw";
     navbar.style.display="block";
   }
   
