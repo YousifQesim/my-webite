@@ -24,6 +24,73 @@ background-color: #2e2f3148;
 
 
 /* navbar */
+.for_responsive{
+    height:100vh;
+   width:0vw;
+   background-color:#2e2f314d;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+    border-radius:10px;
+    position:fixed;
+}
+.active{
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in-out;
+
+}
+@media (max-width: 980px){
+.navbar{
+    display: none;
+}
+.for_responsive{
+    background-color:none;
+}
+
+
+}
+@media (min-width: 980px){
+   .toggle{
+  display: none;
+   }
+ 
+   .navbar{
+display: block !important;}
+ .for_responsive{
+    width: 0vw !important;
+ }
+  
+  
+    }
+.toggle{
+    
+    height:38px;
+    width:35px;
+    border-radius: 10px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+    cursor: pointer;
+    position:fixed;
+    right:10px;
+    top: 10px;
+  
+}
+.toggle div{
+    width: 100%;
+    height:3px;
+    background-color:black;
+   border-radius: 10px;
+  display: block;
+  margin: 5px auto;
+}
+.toggle .bar1{
+    transform:rotate(1)
+}
+/* 
+ */
+
 .navbar {
     position: fixed;
     top: 50px;
@@ -47,8 +114,6 @@ nav li {
     transition: all 1s;
     cursor: pointer;
 }
-.focus:focus ul{
-background-color: red;}
 
 nav li i {
     color: black;
@@ -139,8 +204,8 @@ nav {
 
 
 .introduce {
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     animation: filling 5s normal forwards;
    
     display: flex;
@@ -149,22 +214,21 @@ nav {
 }
 .just {
     width: 75%;
-    min-height:60%;
+    min-height:75%;
     text-align: center;
   
 display: flex;
 justify-content: center;
 align-items: center;
   flex-wrap: wrap;
-
     box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 border-radius: 50px;
+
 }
 .just:hover .my_img{
     transform: scale(1.09);
-    transition: transform 1s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     transform: translateY(-1.5rem);
-
 }
 .just:hover{
    cursor: pointer;
@@ -173,14 +237,14 @@ border-radius: 50px;
 .just .text_butt{
    display: block;
    margin:0 auto;
-  
+ margin-bottom: 50px;
   
 
    
   }
 
 .just img {
-    transition: transform 1s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     height: 350px;
     width: 350px;
     
@@ -190,6 +254,7 @@ border-radius: 50px;
     display: block;
     margin: 0 auto;
     margin-bottom:5px;
+    z-index: -1;
 }
 
 
@@ -295,16 +360,20 @@ border-radius: 50px;
     align-items: center;
     position: relative;
     display: flex;
-    height:20px;
+    height:12px;
     width: 300px;
+  
 }
+
 .value{
    
-    box-shadow: 0 10px 40px -10px #fff;
+   
     border-radius: 70px;
     background-color: #45505b;
-   height:30px;
+   height:100%;
     width:0;
+ 
+
 
 }
 @keyframes office {
