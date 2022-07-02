@@ -12,12 +12,41 @@
     }
     .just{
     width:90%;}
+    nav li a i {
+       color: white;
+      
+    }
+    nav li {
+       
+        background-color: #2E2F31;
+     }
+    .nav-item:hover {
+     background-color:white;
+         }
+   .nav-item:hover .bi {
+       
+        color: #2E2F31;
+        
+     }
+     .nav-item .text{
+        font-weight: bold;
+        position: relative;
+        right: 15px;
+     }
+     .nav-item:hover .text {
+      
+        color: #2E2F31;
+        
+     }
     
     }
     @media (min-width: 980px){
        .toggle{
       display: none;
        }
+       nav li a i {
+        color: black;
+     }
      .just{    width: 75%;}
        .navbar{
     display: block !important;}
@@ -53,7 +82,7 @@ background-color: #2e2f3148;
 .for_responsive{
     height:100vh;
    width:0vw;
-   background-color:#2e2f314d;
+   background-color:#2e2f31c0;
     transform: translateX(-100%);
     transition: transform 0.5s ease-in-out;
     z-index: 1000;
@@ -146,7 +175,6 @@ nav li a {
 nav li a i {
     position: relative;
     top: 0px;
-
 }
 
 nav li a span {
